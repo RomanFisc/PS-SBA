@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: rgb(51, 52, 85);
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+
+}
+
+
+.overall-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  background-color: #111727;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.site-name {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.nav-title {
+  font-size: 25px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  padding-right: 100px;
+  gap: 30px;
+}
+
+.nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #111727;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+.nav-box:hover {
+  color:rgb(154, 154, 154); 
+}
+
+.nav-box:active {
+  color:rgb(154, 154, 154); 
+}
+
+.site-container {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+}
+
+.left {
+  width: 50%;
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZqMGxiNnJxb252YnMwczRhY243ZmM0cHh4aTcwMm50OGM5bHN6dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yfn6mRAP5ZwHyG9o9U/giphy.gif");
+  background-size:100%;
+  object-fit: cover;
+}
+
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+
+
+.page-title {
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.about-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  width: 70%;
+  padding-top: 40px;
+}
+
+.about-text p {
+  font-size: 20px;
+}
+
+.git-box {
+  padding-top: 30px;
+}
+
+.body-btn {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgb(51, 52, 85);
+  color: white;
+  border: 2px solid white;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {border: 2px solid white; 
+        color: white;
+       }
+  50% {border:2px solid rgb(90, 255, 112);
+       color: rgb(90, 255, 112);
+      }
+}
+
+.body-btn:hover {
+  border: 2px solid rgb(166, 234, 175);
+  font-weight: 500;
+  color: rgb(166, 234, 175);
+}
+
+.right-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+.bottom-nav {
+  width: 100%;
+  margin-top: auto;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  background-color:#111727;
+}
+
+.foot-text {
+  font-size: 12px;
+  color: gray;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+  }
+
+  .nav-title {
+    font-size: 30px;
+  }
+  
+  .nav-links {
+    padding-bottom: 20px;
+  }
+
+  .site-name {
+    padding: 0px;    
+  }
+    
+  .nav-links {
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+
+  .page-title {
+    padding-bottom: 0px;
+    padding: 0px;
+  }
+
+  .about-title {
+    padding: 0px;
+  }
+
+  .page-container {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  .about-text {
+    padding: 0px;
+    justify-self: flex-start;
+  }
+
+  .left-box {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .right-box {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .site-container {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .right {
+    width: 100%;
+    height: 60vh;
+  }
+
+}

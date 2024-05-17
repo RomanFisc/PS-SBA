@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing</title>
+  <link rel="stylesheet" href="price.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    .site-container {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 30px;
+    }
+    .right {
+      width: 50%;
+    }
+    .left {
+      width: 50%;
+    }
+    @media only screen and (max-width: 1000px) {
+      .site-container {
+      flex-direction: column;
+      }
+      .right {
+      width: 100%;
+      }
+      .left {
+      width: 100%;
+  }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="nav-bar">
+      <div class="site-name">
+        <h1 class="nav-title">BK Surf Fix</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-box"><button class="nav-box">Home</button></a>
+        <a href="about.html"class="nav-box"><button class="nav-box">About</button></a>
+        <a href="price.html" class="nav-box"><button class="nav-box">Pricing</button></a>
+        <a href="contact.html" class="nav-box"><button class="nav-box">Contact</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="page-title">
+    <h1 class="about-title">Pricing</h1>
+  </div>
+  <div class="site-container">
+    <div class="left">
+      <div class="price-box">
+        <div class="price-table-box">
+          <table class="price-table">
+            <tr>
+              <th>Ding type</th>
+              <th>PU</th>
+              <th>EPS</th>
+            <tr>
+            <tr>
+              <td>Minimum Price</td>
+              <td>$50</td>
+              <td>$55</td>
+            </tr>
+            <tr>
+              <td>Additional Ding</td>
+              <td>$15 and up</td>
+              <td>$20 and up</td>
+            </tr>
+            <tr>
+              <td>FCS Fin Plug</td>
+              <td>$55 per plug</td>
+              <td>$60 per plug</td>
+            </tr>
+            <tr>
+              <td>Future, FCS Box</td>
+              <td>$110</td>
+              <td>$120</td>
+            </tr>
+            <tr>
+              <td>Longboard Box</td>
+              <td>$150</td>
+              <td>$160</td>
+            </tr>
+            <tr>
+              <td>Buckled Board</td>
+              <td>$140</td>
+              <td>$150</td>
+            </tr>
+            <tr>
+              <td>Broken Board</td>
+              <td>$180 and up</td>
+              <td>$190 and up</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-subtitle">
+          <p>All prices are subject to change depending on board condition and other factors.</p>
+        </div>
+        <div class="button-container">
+          <a href="contact.html"><button class="body-btn">Get in touch</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="form-container">
+        <form class="contact-form">
+            <div class="legend-container">
+                <legend class="legend">Sign up to our newsletter for promotions</legend>
+            </div>
+            <div class="form-content">
+                <div class="form-row">
+                    <label for="first-name">*Name</label>
+                    <input type="text" id="Name" name="Name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">*Email</label>
+                    <input type="email" id="email" name="email" required placeholder="joe@example.com">
+                </div>
+                <div class="form-row">
+                  <label for="communication" required></label>
+                    <select name="communication" id="communication">
+                      <option value="volvo">Receive all communications</option>
+                      <option value="saab">Receive only promotions</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button-box">
+                <div class="form-row">
+                    <label></label>
+                    <button type="submit" class="submit-button">Sign Up</button>
+                </div>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+</div>
+    <div class="bottom-nav">
+      <div class="bottom-nav-title">
+        <p class="foot-text">Copyright @RomanFischer</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

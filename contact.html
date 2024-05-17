@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <div class="nav-bar">
+      <div class="site-name">
+        <h1 class="nav-title">BK Surf Fix</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-box"><button class="nav-box">Home</button></a>
+        <a href="about.html"class="nav-box"><button class="nav-box">About</button></a>
+        <a href="price.html" class="nav-box"><button class="nav-box">Pricing</button></a>
+        <a href="contact.html" class="nav-box"><button class="nav-box">Contact</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="site-container">
+    <div class="left" style="background-image: url(images/background.jpeg); background-size: cover;">
+    </div>
+    <div class="right">
+    <div class="page-title">
+      <h1 class="about-title">Contact</h1>
+    </div>
+    <div class="form-header">
+  </div>
+  <div class="form-container">
+      <form class="contact-form">
+          <div class="legend-container">
+              <legend class="legend">We specialize in fixing all types of surfboards, PU and Epoxy. We can do finbox repairs, color matching, and buckled boards. Bring your board in and we can make it look brand new!</legend>
+          </div>
+          <div class="form-content">
+              <div class="form-row">
+                  <label for="first-name">*Name</label>
+                  <input type="text" id="Name" name="Name" required>
+              </div>
+              <div class="form-row">
+                  <label for="email">*Email</label>
+                  <input type="email" id="email" name="email" required placeholder="joe@example.com">
+              </div>
+              <div class="form-row">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890">      
+              </div>
+              <div class="form-row">
+                  <label for="board-type">*Board Type</label>
+                  <input type="text" id="board-type" name="board-type" required placeholder="brand and size">
+              </div>
+              <div class="form-row" style="width: 100%;">
+                  <label for="description">*Description of Ding</label>
+                  <textarea name="description" id="description" required></textarea>
+              </div>
+          </div>
+          <div class="button-box">
+              <div class="form-row">
+                  <label></label>
+                  <button type="submit" class="submit-button">Send Message</button>
+              </div>
+          </div>
+      </form>
+    </div>
+  </div>
+  </div>
+    <div class="bottom-nav">
+      <div class="bottom-nav-title">
+        <p class="foot-text">Copyright @RomanFischer</p>
+      </div>
+    </div>
+  </body>
+  </html>
